@@ -71,9 +71,7 @@ h1{
 }
 
 @media(min-width:500px){
-    .logo2{
-        display:none;
-    }
+    
 .navtab{
     display:none;
 }
@@ -81,19 +79,19 @@ h1{
     display:flex;
     justify-content: space-evenly;
     flex-direction:column;
-    
+}
 
 }
 nav{
     background:silver;
 
 }
-a{
-    color:darkslategrey;
+a{{
+    color:black;
     display:flex;
     flex-direction:column;
     width:100%;
-    border:solid slategray 3px;
+    border:solid black 3px;
     text-align:center;
     text-decoration: none;
     padding: 3% 0%;
@@ -102,12 +100,11 @@ a{
     opacity:1;
     border-radius: 15px;
     background:white;
-
 }
 a:hover{
     background: slategrey;
     opacity:.6;
-}
+}}
 .logo{
     max-width:100%;
     height:auto;
@@ -206,19 +203,7 @@ li{
 
 
 
-    @media(min-width:800px){
-    .logo2{
-        display:none;
-    }
-
-    .navbar-section{
-        display:none;
-    }
-    
-    .navtab{
-        display:flex;
-        flex-direction:row;
-    }
+    @media(min-width:800px{
     
    
     .first-section{
