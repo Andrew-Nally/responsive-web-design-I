@@ -1,3 +1,313 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/*http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.logo{
+	display:none;
+}
+
+.navtab{
+	display:flex;
+	color:black;
+}
+
+a{
+	border:solid black 2px;
+	cursor:pointer;
+	color:black;
+	margin:3% auto;
+	padding: 1% 2% 1% 2%;
+	text-decoration: none;
+	transition-duration: .7s;
+}
+	a:hover{
+	background: darkslategrey;
+	opacity:.6;
+	text-decoration:none;
+	color:white;
+	}
+
+h1{
+	font-size:5.5em;
+	text-align:center;
+	transition-duration: .7s;
+	opacity:1;
+	margin:6% 40% 3% 0%;
+	padding:0% 0% 0% 0%;
+	margin-bottom:3%;
+}
+
+button{
+	text-align:center;
+	height:55px;
+	width:150px;
+	border: solid black 2px;
+	margin:5% 0 0% 17%;
+	cursor:pointer;
+	transition-duration: .7s;
+	opacity:1;
+	background-color:white;
+	font-weight:bolder;
+	font-size:1em;
+	color:black;
+}	
+	button:hover{
+		background: darkslategrey;
+		opacity:.6;
+		color:white;
+}
+
+hr{
+	justify-content:center;
+	margin-bottom:5%;
+	margin-top:2%;
+}
+
+.main{
+	display:flex;
+}
+
+img, .main{
+	display:flex;
+	margin:5% 0% 10% 45%;
+}
+
+.middle-img{
+	width: 95%;
+	margin:5% auto;
 
 
+}
+
+h3{
+	margin:5% auto;
+}
+
+.middle-img{
+	margin: 2% 3%;
+}
+
+.last-section{
+	margin: 3% 
+}
+
+li{
+ 	padding:.5%;
+}
+
+.footer{
+	text-align:center;
+	margin-top:20%;
+}
+
+
+@media(max-width:800px){
+	.logo{
+		display:flex;
+		margin: 2% auto;
+	}
+	nav{
+		margin: 5% 5% 5% 0;
+	}
+	a{
+		margin:3% 2% 0 3%;
+		text-align:center;
+		text-decoration:none;
+		border:solid black 2px;
+		padding:1% 2% 1% 2%;
+	}
+	a:hover{
+		background:darkslategray;
+		color:black;
+		opacity:.6;
+	}
+	
+	h1{
+   		font-size:6em;
+    	text-align:center;
+		margin:20% auto 10% auto;
+	}
+
+	button{
+   		text-align:center;
+		font-weight:bolder;
+		margin:3% 0% 10% 40%;
+   		font-size:1.5em;
+    	color:black;
+	}
+		button:hover{
+			background: slategrey;
+			color:black;
+			opacity:.6;
+		}
+	hr{
+    	justify-content:center;
+    	margin-bottom:5%;
+    	margin-top:2%;
+	}
+
+	.main{
+    	display:none;
+	}
+
+	.first-section{
+		display:flex;
+		width:90%;
+		text-align: justify;
+		margin:5% 5% 3% 5%;
+	}
+
+	.subject{
+		margin:2%
+	}
+
+	.middle-img{
+		width:90%;
+		margin:5% auto;
+	}
+	
+	.middle-section{
+		display:flex;
+		width:90%;
+		text-align: justify;
+		margin:5% 5% 3% 5%;
+	}	
+
+	.last-section{
+    	margin: 5%;
+	}
+	
+	li{
+		padding:.5%;
+	}
+	
+	.footer{
+    text-align:center;
+	margin: 20% 5% 0% 5%
+	}
+}
+
+
+@media(max-width:500px){
+	.logo{
+		display:block;
+		margin: 0% auto;
+		padding:10% 0% 10% 0%;
+	}                           
+	nav{
+		display:flex;
+		flex-direction:column;
+		margin:0;
+	}
+	a{
+		display:flex;
+		flex-direction:row;
+		padding:7% 0% 7% 0%;
+		width:90%;
+		border: solid black 2px;	
+		justify-content:center;
+		align-items:center;
+		margin: 1% 5% 1% 5%;
+		transition-duration: .7s;
+		text-decoration: none;
+		font-size:1.2em;
+		color:black;
+		text-decoration: none;
+		}
+		a:hover{
+			background:darkslategray;
+			color:white;
+			opacity:.6;
+		}
+	
+	.main{
+		display:none;
+	}
+
+	button {
+		display:flex;
+		text-align:center;
+		justify-content: center;
+		color:black;
+		border:solid 2px black;
+		margin:10% auto;
+	}
+
+	.first-section{
+		margin: 0 5% 5% 5%;
+		text-align:justify;
+		display:flex;
+		flex-direction: column;
+	}
+
+	.middle-img{
+		width:90%;
+		margin:5%;
+		
+	}
+	.middle-section{
+		margin: 0% 5% 5% 5%;
+		text-align: justify;
+		display:flex;
+		flex-direction:column;
+	}	
+	.footer{
+		margin:50% 5% 0% 5%;
+	}
+}

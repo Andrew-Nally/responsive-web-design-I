@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.logo{
+    display:none;
+}
+h1{
+    font-size: 32px;
+    margin-left: 20%;
+}
+
+@media(min-width:500px){
+    
+.navtab{
+    display:none;
+}
+.navbar-section{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+}
+
+}
+nav{
+    background:silver;
+
+}
+a{{
+    color:black;
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    border:solid black 3px;
+    text-align:center;
+    text-decoration: none;
+    padding: 3% 0%;
+    font-weight:bold;
+    transition-duration: .9s;
+    opacity:1;
+    border-radius: 15px;
+    background:white;
+}
+a:hover{
+    background: slategrey;
+    opacity:.6;
+}}
+.logo{
+    max-width:100%;
+    height:auto;
+    justify-content:center;
+    margin:3% 0% 3% 40%;
+    height:6%;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+}
+.logo:hover{
+    transform: rotateY(150deg);
+
+}
+
+.title-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+
+}
+h1{
+    font-size:5em;
+    text-align:center;
+    transition-duration: .7s;
+    opacity:1;
+}
+h1:hover{
+    color:darkslategray;
+    opacity:.6;
+    
+}
+
+button{
+    text-align:center;
+    height:55px;
+    width:150px;
+    border: solid slategray 4px;
+    margin:5% 0 4% 0;
+    cursor:pointer;
+    transition-duration: .7s;
+    opacity:1;
+    background-color:white;
+    font-weight:bolder;
+    font-size:1em;
+    color:darkslategray;
+    border-radius:15%;
+}
+button:hover{
+    background: slategrey;
+    opacity:.6;
+}
+hr{
+    justify-content:center;
+    margin-bottom:5%;
+    margin-top:5%;
+
+}
+.main{
+    display:none;
+
+}
+.middle-img{
+    height:auto;
+    max-width:94%;
+}
+
+.first-section{
+    margin: 2% 3%;
+
+}
+h3{
+    margin-top:5%;
+    margin-bottom:5%;
+    text-align:justify
+}
+
+.middle-img{
+    margin: 2% 3%;
+
+}
+.middle-section{
+    margin: 2% 3%;
+
+}
+.last-section{
+    margin: 2% 3%;
+
+}
+li{
+    padding:1%;
+}
+.footer{
+    text-align:center;
+    margin-top:20%;
+}}
+
+
+
+    @media(min-width:800px{
+    
+   
+    .first-section{
+        margin: 0% 3%;
+        display:flex;
+        width:90%;
+        text-align:justify;
+    }
+    
+    .middle-section{
+            margin: 0% 3%;
+            display:flex;
+            text-align:justify;
+    }
+    .subject{
+        margin:2%;
+    }
+
+        h1{ 
+            margin: 0 50%;
+        }}
