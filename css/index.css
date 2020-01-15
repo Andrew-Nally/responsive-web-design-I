@@ -42,9 +42,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 
-* {
-	box-sizing: border-box;
-}
+
 
 html, body {
 	height: 100%;
@@ -58,14 +56,18 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-.logo{
-	display:none;
+* {
+	box-sizing: border-box;
 }
-
+.logo{
+	max-height:36px;
+}
 .navtab{
-	display:flex;
 	color:black;
-	justify-content:center;
+	display:flex;
+	margin: 0% auto;
+	max-width: 100%;
+
 }
 
 a{
@@ -73,7 +75,7 @@ a{
 	cursor:pointer;
 	color:black;
 	text-align:center;
-	margin:3% auto;
+	margin:3% 3%;
 	padding: 1% 2% 1% 2%;
 	text-decoration: none;
 	transition-duration: .7s;
@@ -106,7 +108,10 @@ h1{
 .main{
 	margin: 0% 10% 0% 0%;
 	flex-grow:2;
-	height:auto;
+	max-height:380px;
+	min-height:380px;
+	max-width:380px;
+	min-width:380px;
 }
 
 button{
@@ -142,7 +147,8 @@ hr{
 
 .first-section{
 	display:flex;
-	width:90%;
+	min-width:90%;
+	max-width:90%;
 	text-align: justify;
 	margin:5% 5% 3% 5%;
 }
@@ -178,15 +184,19 @@ margin: 20% 5% 5% 5%
 
 
 @media(max-width:800px){
+	.navtab, .logo{
+		flex-direction:column-reverse;
+	}
+	.navtab, a {
+		flex-direction: row;
+	}
 	.logo{
 		display:flex;
 		margin: 2% auto;
+		max-height:auto;
 	}
 	nav{
 		margin: 5% 5% 5% 0;
-	}
-	.title-section{
-		margin: 
 	}
 	a{
 		margin:3% 2% 0 3%;
